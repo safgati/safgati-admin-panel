@@ -164,3 +164,4 @@ safgati-new/
 
 صنع بـ ❤️ لمجتمع التسويق بالعمولة العربي
 
+# Safgati Admin Panel - Deployed!
