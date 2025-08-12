@@ -3,7 +3,7 @@ import { AuthProvider, useAuth } from './contexts/AuthContext';
 import LoginForm from './components/LoginForm';
 import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
-import ProductsManager from './components/ProductsManager';
+import AdvancedProductManager from './components/AdvancedProductManager';
 import './App.css';
 
 // مكون التحليلات (مؤقت)
@@ -66,7 +66,7 @@ const MainApp = () => {
       case 'dashboard':
         return <Dashboard />;
       case 'products':
-        return <ProductsManager />;
+        return <AdvancedProductManager />;
       case 'analytics':
         return <Analytics />;
       case 'users':
