@@ -1,8 +1,8 @@
 import { createClient } from '@supabase/supabase-js'
 
-// إعدادات Supabase للبيئة الحالية
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'YOUR_SUPABASE_URL'
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'YOUR_SUPABASE_ANON_KEY'
+// إعدادات Supabase للبيئة الحالية (Vite)
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://tqugfevrezqblqchesnt.supabase.co'
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRxdWdmZXZyZXpxYmxxY2hlc250Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQ5MzY4MjMsImV4cCI6MjA3MDUxMjgyM30.a6Q_Af2PkWIJ3SxiykcwCYRasmr4USFokGi-MTSsOPE'
 
 // إنشاء عميل Supabase
 export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
